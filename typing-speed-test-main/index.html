@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/style.css">
+  
+  <title>Frontend Mentor | Typing Speed Test</title>
+
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-title">
+        <div class="keyboard"><img src="assets/images/keyboard-icon.webp" alt=""></div>
+
+        <div class="speed-title">
+          <h1>Typing Speed Test</h1>
+        <div class="test-desc">Type as fast as you can in 60 seconds</div>
+        </div>
+      </div>
+  
+      <div class="points">
+        <div class="trophy"><img src="assets/images/trophy-icon.webp" alt=""></div>
+        <div>
+          <div class="personal">Personal best:</div>
+          <div class="points-num">92 WPM</div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="test">
+
+      <div class="container test-area">
+
+        <div class="perfomances">
+          <div class="perfomance">
+            <div class="title-perform">WPM:</div>
+            <div class="num">40</div>
+            <div class="bar"></div>
+          </div>
+
+          <div class="perfomance">
+            <div class="title-perform">Accuracy:</div>
+            <div class="num accuracy">94%</div>
+            <div class="bar"></div>
+          </div>
+
+          <div class="perfomance">
+            <div class="title-perform">Time:</div>
+            <div class="num time">0:46</div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="difficulty">
+            <div class="difficulty-title">Difficulty:</div>
+
+          <div class="easy">Easy</div>
+          <div class="medium">Medium</div>
+          <div class="hard">Hard</div>
+          </div>
+          <div class="bar"></div>
+          <div class="mode">
+            <div class="mode-title">Mode:</div>
+
+            <div class="timed">Timed(60s)</div>
+            <div class="passage">Passage</div>
+          </div>
+        </div>
+
+        <div class="difficulty-mobile">
+          <select disabled id="mode">
+            <option disabled selected value="Difficulty">Choose</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <select disabled id="time">
+            <option selected disabled value="time">Time</option>
+            <option value="timed">Timed(60s)</option>
+            <option value="passage">Passage</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="line"></div>
+    </section>
+    <section class="type">
+      <div class="config">Select a difficulty and mode</div>
+      <div class="modal">
+        <button onclick="start()" class="start-button">Start Typing Test</button>
+        <div class="desc-type">Or click th text and start typing</div>
+      </div>
+      
+      <div class="container type-area blur">
+        "Constitutional scholars continue debating the \"counter-majoritarian difficulty\": how can judicial 
+      review—whereby unelected judges overturn legislation passed by democratic representatives—be reconciled 
+      with popular sovereignty? Some argue courts protect minority rights against tyrannical majorities; others 
+      contend this reasoning masks ideological preferences in neutral-sounding jurisprudence. The tension, perhaps, 
+      is irresolvable; democratic systems must balance competing values rather than optimize for any single principle."
+      </div>
+      <div class="container text"></div>
+      <textarea autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" class="container" name="" id="typezone" placeholder="Start typing..."></textarea>
+    </section>
+  </main>
+
+
+
+
+  <div class="attribution" style="display: none;">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Petertosh Jean</a>.
+  </div>
+
+  <script src="typespeed.js"></script>
+  <script src="data.js"></script>
+</body>
+</html>
+
